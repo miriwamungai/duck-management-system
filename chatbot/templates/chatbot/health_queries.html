@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block head_title %}Health Queries{% endblock %}
+
+
+{% block content %}
+    <div class="cont">
+
+        <h5>Health Queries</h5>
+        {% comment %}<div class="logo-cont">
+        <!-- Use the Django static template tag for static assets -->
+        <img class="logo" src="{% static 'images/logo.jpg' %}" alt="Logo" />
+    </div>{% endcomment %}
+
+        <div class="ChatWindow">
+            <div class="start-cont">
+                <button id="start">Start a conversation</button>
+            </div>
+
+
+        </div>
+        <div class="ChatInput is-hidey">
+            <div class="ChatInput-input" contenteditable="true" placeholder="Type your message here..."></div>
+            <div class="ChatInput-btnSend"> ></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block corejs %}
+    <!-- Add JavaScript files with Django static tag -->
+{% endblock %}
